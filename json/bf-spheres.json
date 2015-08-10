@@ -1,0 +1,684 @@
+{
+  "Famous Blade": {
+    "Green Claw": 5
+  },
+  "Holy Blade": {
+    "Famous Blade": 1,
+    "Blue Claw": 10
+  },
+  "Beast Blade": {
+    "Holy Blade": 1,
+    "Red Claw": 10
+  },
+  "Dragon Blade": {
+    "Beast Blade": 1,
+    "Demon Claw": 10,
+    "Honor Claw": 5
+  },
+  "Divine Sword": {
+    "Dragon Blade": 1,
+    "Brute Claw": 10,
+    "Rouge Stone": 1,
+    "Honor Claw": 5
+  },
+  "Divine Sword": {
+    "Dragon Blade": 1,
+    "Brute Claw": 10,
+    "Rouge Stone": 1,
+    "Honor Claw": 5
+  },
+  "God Sword": {
+    "Divine Sword": 1,
+    "Purple Fang": 10,
+    "Grief Eye": 1,
+    "Honor Claw": 20
+  },
+  "Chosen Blade": {
+    "God Sword": 1,
+    "Sand Bone": 10,
+    "Mimic Bug": 1,
+    "Honor Claw": 20
+  },
+  "Carnage Blade": {
+    "Chosen Blade": 1,
+    "Sacred Bone": 10,
+    "Royal Stone": 1,
+    "Honor Claw": 25
+  },
+  "Giant Shield": {
+    "Green Pelt": 5
+  },
+  "Dragon Seal": {
+    "Giant Shield": 1,
+    "Blue Pelt": 10
+  },
+  "Goddess Seal": {
+    "Dragon Seal": 1,
+    "Red Pelt": 10
+  },
+  "Star Shield": {
+    "Goddess Seal": 1,
+    "Yellow Pelt": 10,
+    "Honor Pelt": 5
+  },
+  "King Shield": {
+    "Star Shield": 1,
+    "Brute Pelt": 10,
+    "Rouge Stone": 1,
+    "Honor Pelt": 5
+  },
+  "Dogma Shield": {
+    "King Shield": 1,
+    "Purple Bone": 10,
+    "Grief Eye": 1,
+    "Honor Bone": 20
+  },
+  "Grand Shield": {
+    "Dogma Shield": 1,
+    "Sand Bone": 10,
+    "Mimic Bug": 1,
+    "Honor Bone": 20
+  },
+  "Ruler Shield": {
+    "Grand Shield": 1,
+    "Sacred Bone": 10,
+    "Royal Stone": 1,
+    "Honor Bone": 25
+  },
+  "White Cane": {
+    "Green Bug": 5
+  },
+  "Sentry Cane": {
+    "White Cane": 1,
+    "Blue Bug": 10
+  },
+  "Holy Cane": {
+    "Sentry Cane": 1,
+    "Red Bug": 10
+  },
+  "Sky Staff": {
+    "Holy Cane": 1,
+    "Golden Bug": 10,
+    "Honor Drop": 5
+  },
+  "Godly Staff": {
+    "Sky Staff": 1,
+    "Brute Claw": 10,
+    "Rouge Stone": 1,
+    "Honor Bone": 5
+  },
+  "Order Staff": {
+    "Godly Staff": 1,
+    "Purple Fang": 10,
+    "Grief Eye": 1,
+    "Honor Drop": 20
+  },
+  "Worship Cane": {
+    "Order Staff": 1,
+    "Beryl Pelt": 10,
+    "Mimic Bug": 1,
+    "Honor Pelt": 20
+  },
+  "Nature Staff": {
+    "Worship Cane": 1,
+    "Cursed Pelt": 10,
+    "Royal Stone": 1,
+    "Honor Pelt": 25
+  },
+  "Spirit Armor": {
+    "Green Bone": 5
+  },
+  "Beast Armor": {
+    "Spirit Armor": 1,
+    "Blue Bone": 10
+  },
+  "Holy Robe": {
+    "Beast Armor": 1,
+    "Red Bone": 10
+  },
+  "Shiny Armor": {
+    "Holy Robe": 1,
+    "Yellow Bone": 10,
+    "Honor Drop": 5
+  },
+  "God Armor": {
+    "Shiny Armor": 1,
+    "Brute Pelt": 10,
+    "Rouge Stone": 1,
+    "Honor Fang": 5
+  },
+  "Ember Armor": {
+    "God Armor": 1,
+    "Purple Bone": 10,
+    "Grief Eye": 1,
+    "Honor Fang": 20
+  },
+  "Dark Armor": {
+    "Ember Armor": 1,
+    "Beryl Pelt": 10,
+    "Mimic Bug": 1,
+    "Honor Fang": 20
+  },
+  "Odd Armor": {
+    "Dark Armor": 1,
+    "Cursed Pelt": 10,
+    "Royal Stone": 1,
+    "Honor Fang": 25
+  },
+  "Champion Axe": {
+    "Green Fang": 5
+  },
+  "Magical Axe": {
+    "Champion Axe": 3,
+    "Red Fang": 10
+  },
+  "Havoc Axe": {
+    "Magical Axe": 1,
+    "Golden Fang": 10,
+    "Honor Bone": 10
+  },
+  "Muramasa": {
+    "Holy Blade": 2,
+    "Rhau Feather": 5,
+    "Yomi Feather": 5,
+    "Guardian Eye": 2,
+    "Blood Pelt": 2
+  },
+  "Angelic Foil": {
+    "Muramasa": 2,
+    "Beast Blade": 1,
+    "Hades Claw": 3,
+    "Silver Pelt": 3,
+    "Honor Drop": 20
+  },
+  "Amanohabaken": {
+    "Angelic Foil": 1,
+    "Havoc Axe": 1,
+    "Zealot Eye": 2,
+    "Ogre Shard": 2,
+    "Honor Claw": 30
+  },
+  "Royal Shield": {
+    "Dragon Seal": 2,
+    "Rhau Feather": 5,
+    "Yomi Feather": 5,
+    "Guardian Eye": 2,
+    "Blod Pelt": 2
+  },
+  "Exyl Shield": {
+    "Royal Shield": 2,
+    "Goddess Seal": 1,
+    "Hades Claw": 3,
+    "Silver Pelt": 3,
+    "Honor Drop": 20
+  },
+  "Evil Shield": {
+    "Exyl Shield": 1,
+    "Sky Staff": 1,
+    "Zealot Eye": 2,
+    "Ogre Shard": 2,
+    "Honor Pelt": 30
+  },
+  "Death Scythe": {
+    "Holy Blade": 2,
+    "Yomi Feather": 5
+  },
+  "Gilded Pearl": {
+    "Dragon Seal": 2,
+    "Yomi Feather": 5
+  },
+  "Hope Stone": {
+    "Gilded Pearl": 1,
+    "Dogma Shield": 1,
+    "Jade Stone": 10,
+    "Riff Feather": 3,
+    "Mimic Bug": 3
+  },
+  "Poison Shiv": {
+    "Poison Light": 2,
+    "Lynn Feather": 10
+  },
+  "Venom Knives": {
+    "Poison Shiv": 1,
+    "Musa Feather": 10,
+    "Honor Claw": 5
+  },
+  "Venom Flower": {
+    "Venom Knives": 1,
+    "Kuu Feather": 10,
+    "Honor Claw": 20
+  },
+  "Demon Rifle": {
+    "Faint Light": 2,
+    "Lynn Feather": 10
+  },
+  "Death Cannon": {
+    "Demon Rifle": 1,
+    "Musa Feather": 10,
+    "Honor Pelt": 5
+  },
+  "Demon Gun": {
+    "Death Cannon": 1,
+    "Kuu Feather": 10,
+    "Honor Pelt": 20
+  },
+  "Vine Lance": {
+    "Growth Light": 2,
+    "Lynn Feather": 10
+  },
+  "Phantom Pike": {
+    "Vine Lance": 1,
+    "Musa Feather": 10,
+    "Honor Claw": 5
+  },
+  "Emerald Pike": {
+    "Phantom Pike": 1,
+    "Kuu Feather": 10,
+    "Honor Claw": 20
+  },
+  "Beast Spear": {
+    "Broken Light": 2,
+    "Lynn Feather": 10
+  },
+  "Ogre Lance": {
+    "Beast Spear": 1,
+    "Musa Feather": 10,
+    "Honor Pelt": 5
+  },
+  "Dark Spear": {
+    "Ogre Lance": 1,
+    "Kuu Feather": 10,
+    "Honor Pelt": 20
+  },
+  "Cursed Sabre": {
+    "Cursed Light": 4,
+    "Lynn Feather": 20
+  },
+  "Cursed Sword": {
+    "Cursed Sabre": 1,
+    "Musa Feather": 10,
+    "Honor Claw": 5
+  },
+  "Cursed Blade": {
+    "Cursed Sword": 1,
+    "Kuu Feather": 10,
+    "Honor Claw": 20
+  },
+  "Thunder Bow": {
+    "Numb Light": 4,
+    "Lynn Feather": 20
+  },
+  "Zeus's Bow": {
+    "Thunder Bow": 1,
+    "Musa Feather": 10,
+    "Honor Pelt": 5
+  },
+  "Bolt Bow": {
+    "Zeus's Bow": 1,
+    "Kuu Feather": 10,
+    "Honor Pelt": 20
+  },
+  "Monster Robe": {
+    "Dragon Seal": 1,
+    "Guardian Eye": 3,
+    "Honor Bone": 20
+  },
+  "Poison Light": {
+    "Don Nut": 20,
+    "Theo Feather": 5
+  },
+  "Venom Shard": {
+    "Poison Light": 2,
+    "Heth Feather": 10
+  },
+  "Faint Light": {
+    "Buru Nut": 20,
+    "Theo Feather": 5
+  },
+  "Weak Shard": {
+    "Faint Light": 2,
+    "Heth Feather": 10
+  },
+  "Growth Light": {
+    "Buru Nut": 20,
+    "Theo Feather": 5
+  },
+  "Ill Shard": {
+    "Growth Light": 2,
+    "Heth Feather": 10
+  },
+  "Broken Light": {
+    "Buru Nut": 20,
+    "Theo Feather": 5
+  },
+  "Weary Shard": {
+    "Broken Light": 2,
+    "Heth Feather": 10
+  },
+  "Cursed Light": {
+    "Suzu Nut": 20,
+    "Theo Feather": 5
+  },
+  "Curse Shard": {
+    "Cursed Light": 2,
+    "Heth Feather": 10
+  },
+  "Numb Light": {
+    "Bara Nut": 20,
+    "Theo Feather": 5
+  },
+  "Stupor Shard": {
+    "Numb Light": 2,
+    "Heth Feather": 10
+  },
+  "Divine Crest": {
+    "Sentry Cane": 1,
+    "Blood Pelt": 3
+  },
+  "Royal Crest": {
+    "Divine Crest": 1,
+    "Blue Pelt": 3
+  },
+  "Ares' Crest": {
+    "Holy Blade": 1,
+    "Blood Pelt": 3,
+    "Honor Fang": 20
+  },
+  "Cursed Robe": {
+    "Royal Crest": 1,
+    "Magical Axe": 1,
+    "Beast Blade": 1,
+    "Hollow Rock": 3,
+    "Honor Claw": 30
+  },
+  "Skill Bracer": {
+    "Champion Axe": 1,
+    "Famous Blade": 1,
+    "Blue Stone": 3,
+    "Honor Claw": 10
+  },
+  "Cure Bracer": {
+    "Sentry Cane": 1,
+    "Beast Armor": 1,
+    "Red Stone": 3,
+    "Honor Claw": 20
+  },
+  "Zelnite Ring": {
+    "Skill Bracer": 1,
+    "Holy Blade": 1,
+    "Prized Stone": 3,
+    "Honor Bone": 20,
+    "Honor Pelt": 20
+  },
+  "Zel Ring": {
+    "Zelnite Ring": 1,
+    "Beast Blade": 1,
+    "Memory Stone": 3,
+    "Honor Bone": 20,
+    "Honor Pelt": 20
+  },
+  "Soul Bracer": {
+    "Cure Bracer": 1,
+    "Beast Armor": 1,
+    "Karma Stone": 3,
+    "Honor Bone": 20,
+    "Honor Pelt": 20
+  },
+  "Beast Bracer": {
+    "Soul Bracer": 1,
+    "Holy Robe": 1,
+    "Golden Ring": 3,
+    "Honor Pelt": 15,
+    "Rhoa Feather": 3
+  },
+  "Light Helm": {
+    "Goddess Seal": 1,
+    "Holy Blade": 1,
+    "Worn Fang": 3,
+    "Honor Bone": 30,
+    "Honor Claw": 30
+  },
+  "Clear Cloak": {
+    "Yomi Feather": 10,
+    "Blue Pelt": 10,
+    "Honor Pelt": 20
+  },
+  "Wise Mask": {
+    "Rhau Feather": 10,
+    "Blue Bone": 10,
+    "Honor Bone": 20
+  },
+  "Tech Gizmo 2": {
+    "Skill Bracer": 1,
+    "Beast Blade": 1,
+    "Spring Stone": 3,
+    "Honor Claw": 20
+  },
+  "Cure Gizmo 2": {
+    "Cure Bracer": 1,
+    "Goddess Seal": 1,
+    "Forge Stone": 3,
+    "Honor Claw": 20
+  },
+  "Royal Bud": {
+    "Magical Axe": 1,
+    "Golden Fang": 3,
+    "Musa Feather": 3,
+    "Honor Bone": 15,
+    "Rhoa Feather": 3
+  },
+  "Dragon Ring": {
+    "Beast Blade": 1,
+    "Golden Fang": 3,
+    "Musa Feather": 3,
+    "Honor Claw": 15,
+    "Crypt Fang": 5
+  },
+  "Demon Lance": {
+    "Beast Blade": 1,
+    "Demon Eye": 3,
+    "Hades Claw": 3,
+    "Honor Claw": 20
+  },
+  "Phoenix Eye": {
+    "Divine Crest": 1,
+    "Holy Cane": 1,
+    "Holy Robe": 1,
+    "Comet Bug": 3,
+    "Abyss Stone": 3
+  },
+  "Limbo Stone": {
+    "Dragon Seal": 1,
+    "Sentry Cane": 1,
+    "Beast Armor": 1,
+    "Honor Drop": 20
+  },
+  "Crown Light": {
+    "Poison Light": 3,
+    "Growth Light": 3,
+    "Cursed Light": 3,
+    "Wicked Stone": 10,
+    "Honor Bone": 15
+  },
+  "Royal Light": {
+    "Faint Light": 3,
+    "Broken Light": 3,
+    "Numb Light": 3,
+    "Wicked Stone": 10,
+    "Honor Pelt": 15
+  },
+  "Cordelicite": {
+    "Beast Blade": 2,
+    "Goddess Seal": 2,
+    "Giant Claw": 10,
+    "Giant Pelt": 10,
+    "Honor Bone": 10
+  },
+  "Alter Blade": {
+    "Death Scythe": 3,
+    "Gilded Pearl": 3,
+    "Tidal Eye": 3,
+    "Honor Claw": 20,
+    "Honor Pelt": 20
+  },
+  "Dragon Sword": {
+    "Alter Blade": 1,
+    "Prison Talon": 10,
+    "Pair Fang": 10,
+    "Honor Fang": 20,
+    "Honor Claw": 20
+  },
+  "Vampire Spear": {
+    "Cursed Robe": 1,
+    "Giant Claw": 10,
+    "Blood Bone": 3,
+    "Honor Claw": 20
+  },
+  "Health Charm": {
+    "Crown Light": 1,
+    "Royal Light": 1,
+    "Dream Stone": 3,
+    "Sky Fang": 2,
+    "Honor Pelt": 20
+  },
+  "Lizeria Gem": {
+    "Cordelicite": 1,
+    "Sky Fang": 2,
+    "Forever Bone": 3,
+    "Honor Fang": 20
+  },
+  "Divine Gem": {
+    "Dragon Ring": 1,
+    "Dragon Blade": 1,
+    "Sky Fang": 5,
+    "Honor Claw": 20
+  },
+  "Demon Shard": {
+    "Tech Gizmo 2": 2,
+    "Dream Stone": 3,
+    "Forever Bone": 3,
+    "Honor Drop": 20
+  },
+  "Mock Crystal": {
+    "Demon Shard": 1,
+    "Thunder Fang": 20,
+    "Parasite Bug": 3,
+    "Honor Drop": 30
+  },
+  "Bright Shard": {
+    "Crown Light": 2,
+    "Rouge Stone": 2,
+    "Glowing Bug": 10,
+    "Honor Drop": 20
+  },
+  "Royal Shard": {
+    "Royal Light": 2,
+    "Rouge Stone": 2,
+    "Glowing Bug": 10,
+    "Honor Drop": 20
+  },
+  "Thief Guards": {
+    "Zelnite Ring": 1,
+    "Soul Bracer": 1,
+    "Rouge Stone": 3,
+    "Honor Claw": 20,
+    "Honor Bone": 20
+  },
+  "Summoner Hat": {
+    "Demon Shard": 1,
+    "Seph Feather": 20,
+    "Grief Eye": 3,
+    "Honor Pelt": 20
+  },
+  "Sol Creator": {
+    "Tech Gizmo 2": 1,
+    "Jade Stone": 10,
+    "Riff Feather": 3,
+    "Honor Drop": 20
+  },
+  "Luna Creator": {
+    "Cure Gizmo 2": 1,
+    "Jade Stone": 10,
+    "Riff Feather": 3,
+    "Honor Drop": 20
+  },
+  "Fire Mail": {
+    "Dragon Seal": 1,
+    "Burst Bone": 10,
+    "Mammoth Pelt": 10,
+    "Fire Eye": 30,
+    "Honor Bone": 20
+  },
+  "Water Mail": {
+    "Dragon Seal": 1,
+    "Burst Bone": 10,
+    "Mammoth Pelt": 10,
+    "Water Eye": 30,
+    "Honor Bone": 20
+  },
+  "Earth Mail": {
+    "Dragon Seal": 1,
+    "Burst Bone": 10,
+    "Mammoth Pelt": 10,
+    "Earth Eye": 30,
+    "Honor Bone": 20
+  },
+  "Thunder Mail": {
+    "Dragon Seal": 1,
+    "Burst Bone": 10,
+    "Mammoth Pelt": 10,
+    "Thunder Eye": 30,
+    "Honor Bone": 20
+  },
+  "Light Mail": {
+    "Dragon Seal": 1,
+    "Burst Bone": 10,
+    "Mammoth Pelt": 10,
+    "Light Eye": 30,
+    "Honor Bone": 20
+  },
+  "Dark Mail": {
+    "Dragon Seal": 1,
+    "Burst Bone": 10,
+    "Mammoth Pelt": 10,
+    "Dark Eye": 30,
+    "Honor Bone": 20
+  },
+  "Zombie Jabot": {
+    "Skill Bracer": 1,
+    "Cure Bracer": 1,
+    "Zeta Feather": 1,
+    "Honor Bone": 20,
+    "Honor Drop": 20
+  },
+  "Starry Blade": {
+    "Ares' Crest": 1,
+    "Prison Talon": 20,
+    "Zeta Feather": 1,
+    "Honor Fang": 20
+  },
+  "Wyvern Studs": {
+    "Dragon Ring": 1,
+    "Pair Fang": 20,
+    "Zeta Feather": 1,
+    "Honor Bone": 20
+  },
+  "Pure Crystal": {
+    "Monster Robe": 1,
+    "Sacred Bone": 10,
+    "Mirror Bug": 1,
+    "Honor Pelt": 30
+  },
+  "Comet Helmet": {
+    "Light Helm": 1,
+    "Cursed Pelt": 10,
+    "Mirror Bug": 1,
+    "Honor Fang": 30
+  },
+  "Hades Lance": {
+    "Demon Lance": 1,
+    "Metal Talon": 20,
+    "Parasite Bug": 3,
+    "Honor Fang": 30
+  }
+}
