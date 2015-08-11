@@ -2,10 +2,6 @@
  * Created by ZTn on 09/08/2015.
  */
 
-var basicMaterialsController = function ($scope) {
-    $scope.items = [{name: "pffff", materialOf: "eh oh"}];
-};
-
 var BfCraft = {
     spheresRecipes: {},
     synthesisRecipes: {},
@@ -25,55 +21,80 @@ var BfCraft = {
      * @param recipes
      */
     simplifyRecipes: function (recipes) {
-        var simplifiedRecipes = angular.extend({}, recipes);
+        /**
+         * Adds a material to a recipe (creates or updates)
+         *
+         * @param recipe
+         * @param material
+         * @param count
+         */
+        var addMaterialToRecipe = function (recipe, material, count) {
+            if (material in recipe) {
+                recipe[material] += count;
+            }
+            else {
+                recipe[material] = count;
+            }
+        };
 
-        $.each(recipes, function (recipe, materials) {
-            $.each(materials, function (material, count) {
-                if (material in recipes) {
-                    delete materials[material];
-                    $.each(recipes[material], function (subMaterial, subCount) {
-                        if (subMaterial in materials != null) {
-                            materials[subMaterial] += count * subCount;
-                        }
-                        else {
-                            materials[subMaterial] = count * subCount;
-                        }
+        var simplifiedRecipes = {};
+
+        angular.forEach(recipes, function (materials, recipe) {
+            simplifiedRecipes[recipe] = {};
+            angular.forEach(materials, function (count, material) {
+                if (material in simplifiedRecipes) {
+                    angular.forEach(simplifiedRecipes[material], function (subCount, subMaterial) {
+                        addMaterialToRecipe(simplifiedRecipes[recipe], subMaterial, count * subCount);
                     })
+                }
+                else {
+                    addMaterialToRecipe(simplifiedRecipes[recipe], material, count);
                 }
             });
         });
 
+        console.log(simplifiedRecipes);
         return simplifiedRecipes;
     },
 
     /**
-     * Finds the basic materials ie. those not crafted
+     * Returns the materials ie. items used to craft other items
      *
      * @param recipes
-     * @returns {{}}
+     * @returns {<material>: {count:..., materialOf: [...]}}
      */
-    getBasicMaterials: function (recipes) {
-        var basicMaterials = {};
+    getMaterials: function (recipes) {
+        var allMaterials = {};
 
-        $.each(recipes, function (recipe, materials) {
-            $.each(materials, function (material, count) {
-                if (!(materials in recipes)) {
-                    if (material in basicMaterials) {
-                        basicMaterials[material].count++;
-                        basicMaterials[material].materialOf.push(recipe);
-                    }
-                    else {
-                        basicMaterials[material] = {material: material, count: 1, materialOf: [recipe]};
-                    }
+        angular.forEach(recipes, function (materials, recipe) {
+            angular.forEach(materials, function (count, material) {
+                if (material in allMaterials) {
+                    allMaterials[material].count++;
+                    allMaterials[material].materialOf.push(recipe);
+                }
+                else {
+                    allMaterials[material] = {material: material, count: 1, materialOf: [recipe]};
                 }
             })
         });
 
-        $.each(basicMaterials, function (index, value) {
-            console.log(index + ": " + JSON.stringify(value));
-        });
+        return allMaterials;
+    },
 
-        return basicMaterials;
+    /**
+     * Returns all the recipes merged into a single object
+     * @returns {*}
+     */
+    getAllRecipes: function () {
+        return angular.extend({}, BfCraft.synthesisRecipes, BfCraft.spheresRecipes);
+    },
+
+    /**
+     * Returns all simplified recipes merged into a single object
+     * @returns {*}
+     */
+    getAllSimplifiedRecipes: function () {
+        return BfCraft.simplifyRecipes(angular.extend({}, BfCraft.synthesisRecipes, BfCraft.spheresRecipes));
     },
 
     /**
@@ -84,18 +105,6 @@ var BfCraft = {
 
         self.synchronizeRecipesCount++;
         if (self.synchronizeRecipesCount == 2) {
-            BfCraft.simplifiedSynthesisRecipes = BfCraft.simplifyRecipes(BfCraft.synthesisRecipes);
-            BfCraft.simplifiedSpheresRecipes = BfCraft.simplifyRecipes(BfCraft.spheresRecipes);
-
-            angular.extend(self.allRecipes, self.synthesisRecipes);
-            angular.extend(self.allRecipes, self.spheresRecipes);
-
-            self.allBasicMaterials = self.getBasicMaterials(self.allRecipes);
-
-            $.each(self.allRecipes, function (index, value) {
-                console.log(index + ": " + JSON.stringify(value));
-            });
-
             callback();
         }
     },
