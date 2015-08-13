@@ -59,5 +59,5 @@
             restrict: 'E',
             templateUrl: 'bf-materials.html'
         }
-    })
+    });
 })();
