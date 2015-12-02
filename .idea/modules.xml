@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/bf-helper.iml" filepath="$PROJECT_DIR$/bf-helper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../node-ws/node-ws.iml" filepath="$PROJECT_DIR$/../node-ws/node-ws.iml" />
     </modules>
   </component>
 </project>

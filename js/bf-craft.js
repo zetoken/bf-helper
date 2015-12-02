@@ -6,12 +6,6 @@ var BfCraft = {
     spheresRecipes: {},
     synthesisRecipes: {},
 
-    allRecipes: {},
-    allBasicMaterials: {},
-
-    simplifiedSpheresRecipes: {},
-    simplifiedSynthesisRecipes: {},
-
     synchronizeRecipesCount: 0,
 
     /**

@@ -21,12 +21,6 @@
     "Rouge Stone": 1,
     "Honor Claw": 5
   },
-  "Divine Sword": {
-    "Dragon Blade": 1,
-    "Brute Claw": 10,
-    "Rouge Stone": 1,
-    "Honor Claw": 5
-  },
   "God Sword": {
     "Divine Sword": 1,
     "Purple Fang": 10,
@@ -43,6 +37,12 @@
     "Chosen Blade": 1,
     "Sacred Bone": 10,
     "Royal Stone": 1,
+    "Honor Claw": 25
+  },
+  "Sparkle Edge": {
+    "Carnage Edge": 1,
+    "Phantom Fang": 10,
+    "Empty Sphere": 1,
     "Honor Claw": 25
   },
   "Giant Shield": {
@@ -85,6 +85,12 @@
     "Royal Stone": 1,
     "Honor Bone": 25
   },
+  "Sky Shield": {
+    "Ruler Shield": 1,
+    "Phantom Fang": 10,
+    "Empty Sphere": 1,
+    "Honor Pelt": 25
+  },
   "White Cane": {
     "Green Bug": 5
   },
@@ -125,6 +131,12 @@
     "Royal Stone": 1,
     "Honor Pelt": 25
   },
+  "Ruler Staff": {
+    "Nature Staff": 1,
+    "Phantom Pelt": 10,
+    "Empty Sphere": 1,
+    "Honor Drop": 25
+  },
   "Spirit Armor": {
     "Green Bone": 5
   },
@@ -164,6 +176,12 @@
     "Cursed Pelt": 10,
     "Royal Stone": 1,
     "Honor Fang": 25
+  },
+  "Cosmos Armor": {
+    "Odd Armor": 1,
+    "Phantom Pelt": 10,
+    "Empty Sphere": 1,
+    "Honor Bone": 25
   },
   "Champion Axe": {
     "Green Fang": 5
@@ -680,5 +698,25 @@
     "Metal Talon": 20,
     "Parasite Bug": 3,
     "Honor Fang": 30
+  },
+  "Bariura Gem": {
+    "Lizeria Gem": 1,
+    "Phantom Fang": 15,
+    "Phantom Pelt": 15,
+    "Heavenly Eye": 1,
+    "Honor Fang": 25
+  },
+  "Fairy Robe": {
+    "Hope Stone": 1,
+    "Ancient Bone": 20,
+    "Empty Sphere": 2,
+    "Heavenly Eye": 2
+  },
+  "Bandit Ring": {
+    "Thief Guards": 1,
+    "Phantom Fang": 5,
+    "Phantom Pelt": 5,
+    "Ancient Bone": 5,
+    "Heavenly Eye": 1
   }
 }
