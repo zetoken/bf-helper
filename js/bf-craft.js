@@ -5,8 +5,19 @@
 var BfCraft = {
     spheresRecipes: {},
     synthesisRecipes: {},
+    translation: {},
 
-    synchronizeRecipesCount: 0,
+    setSynthesisRecipes: function (recipes) {
+        BfCraft.synthesisRecipes = BfCraft.translateRecipes(recipes);
+    },
+
+    setSphereRecipes: function (recipes) {
+        BfCraft.sphereRecipes = BfCraft.translateRecipes(recipes);
+    },
+
+    setTranslation: function(translation) {
+        BfCraft.translation = translation;
+    },
 
     /**
      * Simplifies the recipes by reducing items used as material to their basic materials.
@@ -91,15 +102,53 @@ var BfCraft = {
         return BfCraft.simplifyRecipes(angular.extend({}, BfCraft.synthesisRecipes, BfCraft.spheresRecipes));
     },
 
-    /**
-     * Builds the allRecipes object if all recipes were successfully loaded.
+    /*
+     * Translate the name of a material
      */
-    synchronizeRecipes: function (callback) {
-        var self = this;
-
-        self.synchronizeRecipesCount++;
-        if (self.synchronizeRecipesCount == 2) {
-            callback();
+    translateName: function (name) {
+        var nameTranslation = BfCraft.translation[name];
+        if (nameTranslation) {
+            return nameTranslation.name ? nameTranslation.name : name;
+        }
+        else {
+            return name;
         }
     },
+
+    /*
+     * Translate the description of a material
+     */
+    translateDescription: function (name) {
+        var nameTranslation = BfCraft.translation[name];
+        if (nameTranslation) {
+            return nameTranslation.description ? nameTranslation.description : "";
+        }
+        else {
+            return "";
+        }
+    },
+
+    translateRecipe: function (materials) {
+        var translated = {};
+
+        angular.forEach(materials, function (count, material) {
+            if (material in materials) {
+                translated[BfCraft.translateName(material)] = count;
+            }
+            else {
+                allMaterials[material] = {material: material, count: 1, materialOf: [recipe]};
+            }
+        });
+
+        return translated;
+    },
+
+    translateRecipes: function (recipes) {
+        var translatedRecipes = {};
+        angular.forEach(recipes, function (materials, recipe) {
+            translatedRecipes[BfCraft.translateName(recipe)] = BfCraft.translateRecipe(materials);
+        });
+        console.log(translatedRecipes);
+        return translatedRecipes;
+    }
 };

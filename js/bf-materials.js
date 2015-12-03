@@ -38,18 +38,30 @@
             })
         };
 
+        var sphereRecipes = {};
+        var synthesisRecipes = {};
+        var translation = {};
+
         var loadSpheresPromise = loadJson('json/bf-spheres-recipes.json', 'bf-spheres-recipes')
             .then(function (data) {
-                BfCraft.spheresRecipes = data;
+                sphereRecipes = data;
             });
 
         var loadSynthesisPromise = loadJson('json/bf-synthesis-recipes.json', 'bf-synthesis-recipes')
             .then(function (data) {
-                BfCraft.synthesisRecipes = data;
+                synthesisRecipes = data;
             });
 
-        $q.all([loadSpheresPromise, loadSynthesisPromise])
+        var loadTranslationPromise = loadJson('json/bf-items.fr.json', 'bf-items-lang')
+            .then(function (data) {
+                translation = data;
+            });
+
+        $q.all([loadSpheresPromise, loadSynthesisPromise, loadTranslationPromise])
             .then(function (results) {
+                BfCraft.setTranslation(translation);
+                BfCraft.setSphereRecipes(sphereRecipes);
+                BfCraft.setSynthesisRecipes(synthesisRecipes);
                 $scope.materials = BfCraft.getMaterials(BfCraft.getAllSimplifiedRecipes());
             });
     }]);

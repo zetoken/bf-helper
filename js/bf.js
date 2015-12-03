@@ -20,4 +20,10 @@
             });
         }
     });
+
+    app.filter('langName', function () {
+        return function (name) {
+            return BfCraft.translateName(name);
+        }
+    });
 })();
