@@ -1,4 +1,61 @@
 {
+  "Sacred Light": {
+    "Holy Light": 1,
+    "Purple Drop": 5,
+    "Silver Drop": 2
+  },
+  "Shade Stone": {
+    "Dark Ore": 2,
+    "Dark Seal": 2,
+    "Dark Eye": 3
+  },
+  "Nullifier": {
+    "Antidote": 3,
+    "Holy Water": 3,
+    "Stimulant": 3,
+    "Honor Drop": 10
+  },
+  "Dark Seal": {
+    "Dark Eye": 1,
+    "Paladin Stone": 1
+  },
+  "Blaze Stone": {
+    "Fire Ore": 2,
+    "Fire Seal": 2,
+    "Fire Eye": 3
+  },
+  "Thunder Seal": {
+    "Thunder Eye": 1,
+    "Paladin Stone": 1
+  },
+  "Def Crystal": {
+    "Smooth Stone": 1,
+    "Def Potion": 1,
+    "Mow Nut": 1
+  },
+  "Earth Seal": {
+    "Earth Eye": 1,
+    "Paladin Stone": 1
+  },
+  "Remedy": {
+    "Tonic": 3,
+    "Blue Drop": 2
+  },
+  "Atk Potion": {
+    "Red Grass": 1,
+    "Koka Nut": 2
+  },
+  "Holy Flute": {
+    "Ares' Flute": 2,
+    "Fujin Potion": 1,
+    "Honor Fang": 1
+  },
+  "Crescent Dew": {
+    "Mooncake": 2,
+    "Miracle Drop": 1,
+    "Moon Bug": 1,
+    "Honor Drop": 1
+  },
   "Cure": {
     "Green Grass": 1,
     "Green Drop": 1
@@ -8,79 +65,119 @@
     "Red Drop": 1,
     "Cure": 1
   },
-  "Mega Cure": {
-    "Yellow Grass": 1,
-    "Gold Drop": 1,
-    "High Cure": 1
+  "Teleport": {
+    "Smooth Stone": 1,
+    "Move Feather": 1
   },
-  "Divine Light": {
-    "High Cure": 5,
-    "Purple Drop": 1
+  "Goddess Idol": {
+    "Angel Idol": 2,
+    "Titan Elixir": 1,
+    "Honor Bone": 1
   },
-  "Holy Light": {
-    "Divine Light": 2,
-    "Mega Cure": 5,
-    "Silver Drop": 1
+  "Lunar Treat": {
+    "Moonlit Essence": 1,
+    "Spice Pouch": 1
+  },
+  "Atk Crystal": {
+    "Smooth Stone": 1,
+    "Atk Potion": 1,
+    "Mow Nut": 1
+  },
+  "Ares' Flute": {
+    "Hard Bone": 1,
+    "Spirit Stone": 1
+  },
+  "Nian Gao": {
+    "Spice Pouch": 10,
+    "Prosperity Essence": 6
+  },
+  "Gleam Stone": {
+    "Light Ore": 2,
+    "Light Seal": 2,
+    "Light Eye": 3
   },
   "Antidote": {
     "Blue Drop": 1,
     "Don Nut": 1
   },
-  "Tonic": {
-    "Blue Drop": 1,
-    "Buru Nut": 1
+  "Beacon": {
+    "Smooth Stone": 1,
+    "Acute Eye": 1
+  },
+  "Fujin Potion": {
+    "Fujin's Eye": 1,
+    "God Stone": 1
   },
   "Holy Water": {
     "Blue Drop": 1,
     "Suzu Nut": 1
   },
-  "Stimulant": {
-    "Blue Drop": 1,
-    "Bara Nut": 1
+  "Mooncake": {
+    "Lunar Treat": 1,
+    "Miracle Drop": 2
   },
-  "Atk Potion": {
+  "God Crystal": {
+    "Smooth Stone": 1,
+    "Cure": 1,
+    "Mow Nut": 1
+  },
+  "Def Potion": {
     "Red Grass": 1,
-    "Koka Nut": 2
+    "Hoku Nut": 2
   },
   "Brute Elixir": {
     "Atk Potion": 2,
     "Koka Nut": 2,
     "Gold Drop": 1
   },
-  "Def Potion": {
-    "Red Grass": 1,
-    "Hoku Nut": 2
+  "Stimulant": {
+    "Blue Drop": 1,
+    "Bara Nut": 1
   },
-  "Titan Elixir": {
-    "Def Potion": 2,
-    "Hoku Nut": 2,
-    "Gold Drop": 1
+  "Tonic": {
+    "Blue Drop": 1,
+    "Buru Nut": 1
   },
-  "Ares' Elixir": {
-    "Brute Elixir": 1,
-    "Titan Elixir": 1,
-    "Fate Stone": 1,
-    "Paladin Stone": 1
+  "Divine Light": {
+    "High Cure": 5,
+    "Purple Drop": 1
   },
-  "Fire Ore": {
-    "Fire Eye": 1,
-    "Fate Stone": 1
+  "Revive": {
+    "Cure": 10,
+    "Honor Drop": 3
   },
-  "Water Ore": {
-    "Water Eye": 1,
-    "Fate Stone": 1
+  "Bolt Stone": {
+    "Thunder Ore": 2,
+    "Thunder Seal": 2,
+    "Thunder Eye": 3
   },
-  "Earth Ore": {
-    "Earth Eye": 1,
-    "Fate Stone": 1
+  "Adorned Egg": {
+    "Spice Pouch": 10,
+    "Rabbit's Foot": 10
   },
   "Thunder Ore": {
     "Thunder Eye": 1,
     "Fate Stone": 1
   },
-  "Light Ore": {
-    "Light Eye": 1,
+  "Detector": {
+    "Smooth Stone": 1,
+    "Acute Eye": 1,
+    "Brown Grass": 1
+  },
+  "Wave Stone": {
+    "Water Ore": 2,
+    "Water Seal": 2,
+    "Water Eye": 3
+  },
+  "Fire Ore": {
+    "Fire Eye": 1,
     "Fate Stone": 1
+  },
+  "Hero Crystal": {
+    "Fujin Tonic": 2,
+    "Holy Flute": 2,
+    "Honor Claw": 1,
+    "Honor Fang": 1
   },
   "Dark Ore": {
     "Dark Eye": 1,
@@ -90,29 +187,64 @@
     "Fire Eye": 1,
     "Paladin Stone": 1
   },
-  "Water Seal": {
-    "Water Eye": 1,
-    "Paladin Stone": 1
-  },
-  "Earth Seal": {
-    "Earth Eye": 1,
-    "Paladin Stone": 1
-  },
-  "Thunder Seal": {
-    "Thunder Eye": 1,
-    "Paladin Stone": 1
+  "Holy Light": {
+    "Divine Light": 2,
+    "Mega Cure": 5,
+    "Silver Drop": 1
   },
   "Light Seal": {
     "Light Eye": 1,
     "Paladin Stone": 1
   },
-  "Dark Seal": {
-    "Dark Eye": 1,
+  "Water Ore": {
+    "Water Eye": 1,
+    "Fate Stone": 1
+  },
+  "Rainbow Cupcake": {
+    "Spice Pouch": 10,
+    "Ascension Bell": 10
+  },
+  "Water Seal": {
+    "Water Eye": 1,
     "Paladin Stone": 1
   },
-  "Fujin Potion": {
-    "Fujin's Eye": 1,
-    "God Stone": 1
+  "Titan Elixir": {
+    "Def Potion": 2,
+    "Hoku Nut": 2,
+    "Gold Drop": 1
+  },
+  "Revive Light": {
+    "Revive": 1,
+    "High Cure": 10,
+    "Honor Drop": 3
+  },
+  "Smoke Bomb": {
+    "Smooth Stone": 1,
+    "Smoky Drop": 1
+  },
+  "Mega Cure": {
+    "Yellow Grass": 1,
+    "Gold Drop": 1,
+    "High Cure": 1
+  },
+  "Earth Ore": {
+    "Earth Eye": 1,
+    "Fate Stone": 1
+  },
+  "Flora Stone": {
+    "Earth Ore": 2,
+    "Earth Seal": 2,
+    "Earth Eye": 3
+  },
+  "Ares' Elixir": {
+    "Brute Elixir": 1,
+    "Titan Elixir": 1,
+    "Fate Stone": 1,
+    "Paladin Stone": 1
+  },
+  "Light Ore": {
+    "Light Eye": 1,
+    "Fate Stone": 1
   },
   "Fujin Tonic": {
     "Fujin Potion": 2,
@@ -122,28 +254,5 @@
   "Angel Idol": {
     "Angel Tear": 1,
     "Gospel Stone": 1
-  },
-  "Goddess Idol": {
-    "Angel Idol": 2,
-    "Titan Elixir": 1,
-    "Honor Bone": 1
-  },
-  "Ares' Flute": {
-    "Hard Bone": 1,
-    "Spirit Stone": 1
-  },
-  "Holy Flute": {
-    "Ares' Flute": 2,
-    "Fujin Potion": 1,
-    "Honor Fang": 1
-  },
-  "Revive": {
-    "Cure": 10,
-    "Honor Drop": 3
-  },
-  "Revive Light": {
-    "Revive": 1,
-    "High Cure": 10,
-    "Honor Drop": 3
   }
 }
