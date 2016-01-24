@@ -78,8 +78,13 @@
         };
 
         $scope.refresh = refresh;
-
         refresh();
+
+        var langUpdate = function (lang) {
+            // TODO
+        };
+
+        $scope.langUpdate = langUpdate;
     }]);
 
     app.directive('bfMaterials', function () {

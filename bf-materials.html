@@ -20,11 +20,11 @@
             </div>
         </div>
         <div class="col-md-2 col-xs-2 col-sm-2">
-            <div class="input-group input-group-sm pull-left searchBox" style="width:100%;" ng-click="refresh(true)">
-            <span class="input-group-addon" style="width:15px;">
-                <i class="glyphicon glyphicon-refresh" aria-hidden="true"></i>
-            </span>
-                <button type="button" class="btn btn-default btn-sm">Refresh</button>
+            <div class="input-group input-group-sm pull-left" style="width:100%;" ng-click="refresh(true)">
+                <button type="button" class="btn btn-success btn-sm">
+                    <i class="glyphicon glyphicon-cloud-download" aria-hidden="true"></i>
+                    Refresh
+                </button>
             </div>
         </div>
     </div>
@@ -45,7 +45,7 @@
                     <a href="" ng-click="order('count')">Times used</a>
                     <span class="sortorder" ng-show="predicate === 'count'" ng-class="{reverse:reverse}"></span>
                 </th>
-                <th>\
+                <th>
                     Crafted material
                 </th>
             </tr>
