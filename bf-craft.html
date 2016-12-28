@@ -1,0 +1,65 @@
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-5 col-xs-5 col-sm-5">
+            <div class="input-group input-group-sm pull-left searchBox" style="width:100%;">
+            <span class="input-group-addon" style="width:15px;">
+                <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+            </span>
+                <input [(ngModel)]="materialFilter" type="text" class="form-control" placeholder="Material"/>
+            </div>
+        </div>
+        <div class="col-md-5 col-xs-5 col-sm-5">
+            <div class="input-group input-group-sm pull-left searchBox" style="width:100%;">
+            <span class="input-group-addon" style="width:15px;">
+                <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+            </span>
+                <input [(ngModel)]="materialOfFilter" type="text" class="form-control" placeholder="Crafted item"/>
+            </div>
+        </div>
+        <div class="col-md-2 col-xs-2 col-sm-2">
+            <div class="input-group input-group-sm pull-left" style="width:100%;">
+                <button type="button" class="btn btn-success btn-sm" (click)="refreshClicked()">
+                    <i class="glyphicon glyphicon-cloud-download" aria-hidden="true"></i>
+                    Refresh
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-info">
+        Materials found: {{materials.length}}<br/>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>
+                    <a href="" (click)="onSortByMaterial($event)">Material</a>
+                    <span *ngIf="true" class="sortorder"></span>
+                </th>
+                <th class="text-nowrap">
+                    <a href="" (click)="onSortByUseCount($event)">Times used</a>
+                    <span *ngIf="true" class="sortorder"></span>
+                </th>
+                <th>
+                    Crafted material
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let material of materials | filterMaterialOf:materialOfFilter | filterMaterial:materialFilter">
+                <th class="text-nowrap">{{material.$key}}</th>
+                <td>{{material.$value.count}}</td>
+                <td>
+                    <span *ngFor="let item of material.$value.materialOf">
+                        <a href="http://bravefrontierglobal.wikia.com/wiki/{{item}}">{{item}}</a>,
+                    </span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

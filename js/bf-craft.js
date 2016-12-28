@@ -45,11 +45,11 @@ var BfCraft = {
 
         var simplifiedRecipes = {};
 
-        angular.forEach(recipes, function (materials, recipe) {
+        _.forEach(recipes, function (materials, recipe) {
             simplifiedRecipes[recipe] = {};
-            angular.forEach(materials, function (count, material) {
+            _.forEach(materials, function (count, material) {
                 if (material in simplifiedRecipes) {
-                    angular.forEach(simplifiedRecipes[material], function (subCount, subMaterial) {
+                    _.forEach(simplifiedRecipes[material], function (subCount, subMaterial) {
                         addMaterialToRecipe(simplifiedRecipes[recipe], subMaterial, count * subCount);
                     })
                 }
@@ -71,8 +71,8 @@ var BfCraft = {
     getMaterials: function (recipes) {
         var allMaterials = {};
 
-        angular.forEach(recipes, function (materials, recipe) {
-            angular.forEach(materials, function (count, material) {
+        _.forEach(recipes, function (materials, recipe) {
+            _.forEach(materials, function (count, material) {
                 if (material in allMaterials) {
                     allMaterials[material].count++;
                     allMaterials[material].materialOf.push(recipe);
@@ -91,7 +91,7 @@ var BfCraft = {
      * @returns {*}
      */
     getAllRecipes: function () {
-        return angular.extend({}, BfCraft.synthesisRecipes, BfCraft.spheresRecipes);
+        return _.extend({}, BfCraft.synthesisRecipes, BfCraft.spheresRecipes);
     },
 
     /**
@@ -99,7 +99,7 @@ var BfCraft = {
      * @returns {*}
      */
     getAllSimplifiedRecipes: function () {
-        return BfCraft.simplifyRecipes(angular.extend({}, BfCraft.synthesisRecipes, BfCraft.sphereRecipes));
+        return BfCraft.simplifyRecipes(_.extend({}, BfCraft.synthesisRecipes, BfCraft.sphereRecipes));
     },
 
     /*
@@ -130,7 +130,7 @@ var BfCraft = {
 
     translateRecipe: function (materials) {
         var translated = {};
-        angular.forEach(materials, function (count, material) {
+        _.forEach(materials, function (count, material) {
             if (material in materials) {
                 translated[BfCraft.translateName(material)] = count;
             }
@@ -144,7 +144,7 @@ var BfCraft = {
 
     translateRecipes: function (recipes) {
         var translatedRecipes = {};
-        angular.forEach(recipes, function (materials, recipe) {
+        _.forEach(recipes, function (materials, recipe) {
             translatedRecipes[BfCraft.translateName(recipe)] = BfCraft.translateRecipe(materials);
         });
         return translatedRecipes;
