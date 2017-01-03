@@ -44,7 +44,7 @@
                     <span *ngIf="true" class="sortorder"></span>
                 </th>
                 <th>
-                    Crafted material
+                    Craftable items
                 </th>
             </tr>
             </thead>
@@ -54,7 +54,7 @@
                 <td>{{material.$value.count}}</td>
                 <td>
                     <span *ngFor="let item of material.$value.materialOf">
-                        <a href="http://bravefrontierglobal.wikia.com/wiki/{{item}}">{{item}}</a>,
+                        <a href="http://bravefrontierglobal.wikia.com/wiki/{{item}}">{{item}}</a> ({{crafts[item][material.$key]}}),
                     </span>
                 </td>
             </tr>

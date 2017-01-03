@@ -16,8 +16,7 @@ declare var BfCraft: any;
 
 export class BfCraftComponent {
     private http: Http;
-    public synthesisRecipes: any = {};
-    public spheresRecipes: any = {};
+    public crafts: any = {};
     public materials: any = [];
     public sortCriteria = 'material';
     public sortAscendant = false;
@@ -127,6 +126,7 @@ export class BfCraftComponent {
                         crafts[o.$value.name] = components;
                     });
                 console.log(crafts);
+                this.crafts = crafts;
                 BfCraft.setTranslation({});
                 BfCraft.setSynthesisRecipes(crafts);
                 this.materials = this.objectToArray(BfCraft.getMaterials(BfCraft.getAllRecipes()));

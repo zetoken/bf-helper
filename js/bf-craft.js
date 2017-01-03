@@ -91,7 +91,7 @@ var BfCraft = {
      * @returns {*}
      */
     getAllRecipes: function () {
-        return _.extend({}, BfCraft.synthesisRecipes || {}, BfCraft.spheresRecipes || {});
+        return _.extend({}, BfCraft.synthesisRecipes, BfCraft.spheresRecipes);
     },
 
     /**
