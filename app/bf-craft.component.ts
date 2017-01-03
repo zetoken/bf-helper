@@ -20,7 +20,7 @@ export class BfCraftComponent {
     public spheresRecipes: any = {};
     public materials: any = [];
     public sortCriteria = 'material';
-    public sortAscendant = true;
+    public sortAscendant = false;
 
     constructor(http: Http) {
         this.http = http;
@@ -37,9 +37,7 @@ export class BfCraftComponent {
      */
     public onSortByMaterial(event: Event) {
         event.preventDefault();
-        this.updateSortingCriteria('material');
-        let direction = this.sortAscendant ? 1 : -1;
-        this.materials = this.materials.sort((l: any, r: any) => this.compare(l.$key, r.$key) * direction);
+        this.sortByMaterial();
     }
 
     /**
@@ -48,9 +46,7 @@ export class BfCraftComponent {
      */
     public onSortByUseCount(event: Event) {
         event.preventDefault();
-        this.updateSortingCriteria('useCount');
-        let direction = this.sortAscendant ? 1 : -1;
-        this.materials = this.materials.sort((l: any, r: any) => this.compareByCraftName(l, r) * direction);
+        this.sortByUseCount();
     }
 
     private compare(l: any, r: any) {
@@ -69,14 +65,6 @@ export class BfCraftComponent {
             return byUseCount;
         }
         return this.compare(l.$key, r.$key);
-    }
-
-    private updateSortingCriteria(criteria: string) {
-        if (this.sortCriteria == criteria) {
-            this.sortAscendant = !this.sortAscendant;
-        } else {
-            this.sortCriteria = criteria;
-        }
     }
 
     private objectToArray(value: any) {
@@ -121,18 +109,48 @@ export class BfCraftComponent {
             });
         };
 
-        var synthesisObservable = loadJson('json/bf-synthesis-recipes.json', 'bf-synthesis-recipes');
-        var spheresObservable = loadJson('json/bf-spheres-recipes.json', 'bf-spheres-recipes');
-
-        Observable.forkJoin([synthesisObservable, spheresObservable])
+        loadJson('http://touchandswipe.github.io/bravefrontier_data/eu/items.json', 'bf-items')
             .subscribe((data: any) => {
-                this.synthesisRecipes = data[0];
-                this.spheresRecipes = data[1];
+                let crafts = {};
+                this.objectToArray(data)
+                    .filter((o: any) => o.$value.hasOwnProperty('recipe'))
+                    .forEach((o: any) => {
+                        let components = {};
+                        o.$value.recipe.materials.forEach((m: any) => {
+                            // Some id may not be defined in items list...
+                            let name = m.id;
+                            if (data.hasOwnProperty(m.id)) {
+                                name = data[m.id].name
+                            }
+                            components[name] = m.count;
+                        });
+                        crafts[o.$value.name] = components;
+                    });
+                console.log(crafts);
                 BfCraft.setTranslation({});
-                BfCraft.setSynthesisRecipes(this.synthesisRecipes);
-                BfCraft.setSphereRecipes(this.spheresRecipes);
-                this.materials = this.objectToArray(BfCraft.getMaterials(BfCraft.getAllSimplifiedRecipes()));
-                console.log(this.materials);
+                BfCraft.setSynthesisRecipes(crafts);
+                this.materials = this.objectToArray(BfCraft.getMaterials(BfCraft.getAllRecipes()));
+                this.sortByMaterial();
             });
+    }
+
+    private sortByMaterial() {
+        this.updateSortingCriteria('material');
+        let direction = this.sortAscendant ? 1 : -1;
+        this.materials = this.materials.sort((l: any, r: any) => this.compare(l.$key, r.$key) * direction);
+    }
+
+    private sortByUseCount() {
+        this.updateSortingCriteria('useCount');
+        let direction = this.sortAscendant ? 1 : -1;
+        this.materials = this.materials.sort((l: any, r: any) => this.compareByCraftName(l, r) * direction);
+    }
+
+    private updateSortingCriteria(criteria: string) {
+        if (this.sortCriteria == criteria) {
+            this.sortAscendant = !this.sortAscendant;
+        } else {
+            this.sortCriteria = criteria;
+        }
     }
 }

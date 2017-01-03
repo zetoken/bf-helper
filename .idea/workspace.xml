@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca428893-6f53-4635-b8af-8bffb6bef9e7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js-index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/bf-materials.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/bf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/bf-items.fr.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/bf-spheres-recipes.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/json/bf-synthesis-recipes.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/bf-craft.component.ts" afterPath="$PROJECT_DIR$/app/bf-craft.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bf-craft.js" afterPath="$PROJECT_DIR$/js/bf-craft.js" />
     </list>
     <ignored path="bf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,78 +32,7 @@
     <favorites_list name="bf" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="bf-craft.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bf-craft.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bf-items.fr.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/json/bf-items.fr.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bf-craft.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/bf-craft.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1089">
-              <caret line="41" column="105" lean-forward="false" selection-start-line="41" selection-start-column="105" selection-end-line="41" selection-end-column="105" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-                <element signature="n#!!block;n#constructor#0;n#BfCraftComponent#0" expanded="false" />
-                <element signature="n#!!block;n#refreshClicked#0;n#BfCraftComponent#0" expanded="false" />
-                <element signature="n#!!doc;n#onSortByMaterial#0;n#BfCraftComponent#0" expanded="false" />
-                <element signature="n#!!doc;n#onSortByUseCount#0;n#BfCraftComponent#0" expanded="false" />
-                <element signature="n#!!block;n#compare#0;n#BfCraftComponent#0" expanded="false" />
-                <element signature="n#!!block;n#compareByCraftName#0;n#BfCraftComponent#0" expanded="false" />
-                <element signature="n#!!block;n#updateSortingCriteria#0;n#BfCraftComponent#0" expanded="false" />
-                <element signature="n#!!block;n#objectToArray#0;n#BfCraftComponent#0" expanded="false" />
-                <element signature="n#!!block;n#refresh#0;n#BfCraftComponent#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-              <folding>
-                <marker date="1483012384853" expanded="true" signature="165:273" ph="..." />
-                <marker date="1483012384853" expanded="false" signature="203:214" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bf-materials.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bf-materials.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="45" column="58" lean-forward="true" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -174,7 +104,6 @@
         <option value="$PROJECT_DIR$/app/app.component.ts" />
         <option value="$PROJECT_DIR$/app/material.ts" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/bf-craft.js" />
         <option value="$PROJECT_DIR$/app/filter-materials.pipe.ts" />
         <option value="$PROJECT_DIR$/app/object-to-array.pipe.ts" />
         <option value="$PROJECT_DIR$/app/filter-material.pipe.ts" />
@@ -183,8 +112,9 @@
         <option value="$PROJECT_DIR$/app/orderby-material.pipe.ts" />
         <option value="$PROJECT_DIR$/app/orderby-craft.pipe.ts" />
         <option value="$PROJECT_DIR$/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/app/bf-craft.component.ts" />
         <option value="$PROJECT_DIR$/bf-craft.html" />
+        <option value="$PROJECT_DIR$/js/bf-craft.js" />
+        <option value="$PROJECT_DIR$/app/bf-craft.component.ts" />
       </list>
     </option>
   </component>
@@ -853,7 +783,7 @@
       <workItem from="1453630083685" duration="4099000" />
       <workItem from="1482952180999" duration="20282000" />
       <workItem from="1483033561048" duration="8714000" />
-      <workItem from="1483049370280" duration="37444000" />
+      <workItem from="1483049370280" duration="45004000" />
     </task>
     <task id="LOCAL-00001" summary="Initial version:&#10;- simple web application based on bootstrap and angularjs">
       <created>1439246976967</created>
@@ -974,11 +904,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483376570150</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="- Migration to Angular 2 and TypeScript">
+      <created>1483377824222</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1483377824222</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253729000" />
+    <option name="totallyTimeSpent" value="261289000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1089,7 +1026,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1192,13 +1129,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/material.js" />
     <entry file="file://$PROJECT_DIR$/app/synthesis-recipe.ts" />
-    <entry file="file://$PROJECT_DIR$/json/bf-spheres-recipes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js-index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1211,14 +1141,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/bf-synthesis-recipes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1298,25 +1220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bf-craft.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1089">
-          <caret line="41" column="105" lean-forward="false" selection-start-line="41" selection-start-column="105" selection-end-line="41" selection-end-column="105" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-            <element signature="n#!!block;n#constructor#0;n#BfCraftComponent#0" expanded="false" />
-            <element signature="n#!!block;n#refreshClicked#0;n#BfCraftComponent#0" expanded="false" />
-            <element signature="n#!!doc;n#onSortByMaterial#0;n#BfCraftComponent#0" expanded="false" />
-            <element signature="n#!!doc;n#onSortByUseCount#0;n#BfCraftComponent#0" expanded="false" />
-            <element signature="n#!!block;n#compare#0;n#BfCraftComponent#0" expanded="false" />
-            <element signature="n#!!block;n#compareByCraftName#0;n#BfCraftComponent#0" expanded="false" />
-            <element signature="n#!!block;n#updateSortingCriteria#0;n#BfCraftComponent#0" expanded="false" />
-            <element signature="n#!!block;n#objectToArray#0;n#BfCraftComponent#0" expanded="false" />
-            <element signature="n#!!block;n#refresh#0;n#BfCraftComponent#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/bf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -1330,40 +1233,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/json/bf-items.fr.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bf-craft.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#setSynthesisRecipes#0;n#setSynthesisRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#setSphereRecipes#0;n#setSphereRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#setTranslation#0;n#setTranslation#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="n#!!doc;n#simplifyRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#simplifyRecipes#0;n#simplifyRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="n#!!doc;n#getMaterials#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#getMaterials#0;n#getMaterials#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="n#!!doc;n#getAllRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#getAllRecipes#0;n#getAllRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="n#!!doc;n#getAllSimplifiedRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#getAllSimplifiedRecipes#0;n#getAllSimplifiedRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="e#3031#3081#0" expanded="false" />
-            <element signature="n#!!block;n#translateName#0;n#translateName#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="e#3350#3407#0" expanded="false" />
-            <element signature="n#!!block;n#translateDescription#0;n#translateDescription#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#translateRecipe#0;n#translateRecipe#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-            <element signature="n#!!block;n#translateRecipes#0;n#translateRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1396,6 +1265,78 @@
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/bf-items.fr.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/bf-synthesis-recipes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/bf-spheres-recipes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bf-craft.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="778">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+            <element signature="n#!!block;n#constructor#0;n#BfCraftComponent#0" expanded="false" />
+            <element signature="n#!!block;n#refreshClicked#0;n#BfCraftComponent#0" expanded="false" />
+            <element signature="n#!!doc;n#onSortByMaterial#0;n#BfCraftComponent#0" expanded="false" />
+            <element signature="n#!!doc;n#onSortByUseCount#0;n#BfCraftComponent#0" expanded="false" />
+            <element signature="n#!!block;n#onSortByUseCount#0;n#BfCraftComponent#0" expanded="false" />
+            <element signature="n#!!block;n#compare#0;n#BfCraftComponent#0" expanded="false" />
+            <element signature="n#!!block;n#compareByCraftName#0;n#BfCraftComponent#0" expanded="false" />
+            <element signature="n#!!block;n#objectToArray#0;n#BfCraftComponent#0" expanded="false" />
+            <element signature="n#!!block;n#refresh#0;n#BfCraftComponent#0" expanded="false" />
+            <element signature="e#2047#3331#0" expanded="false" />
+            <element signature="n#!!block;n#sortByMaterial#0;n#BfCraftComponent#0" expanded="false" />
+            <element signature="n#!!block;n#sortByUseCount#0;n#BfCraftComponent#0" expanded="false" />
+            <element signature="n#!!block;n#updateSortingCriteria#0;n#BfCraftComponent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bf-craft.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="93" column="87" lean-forward="false" selection-start-line="93" selection-start-column="87" selection-end-line="93" selection-end-column="87" />
+          <folding>
+            <element signature="n#!!block;n#setSynthesisRecipes#0;n#setSynthesisRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#setSphereRecipes#0;n#setSphereRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#setTranslation#0;n#setTranslation#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="n#!!doc;n#simplifyRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#simplifyRecipes#0;n#simplifyRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="n#!!doc;n#getMaterials#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#getMaterials#0;n#getMaterials#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="n#!!doc;n#getAllRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="n#!!doc;n#getAllSimplifiedRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#getAllSimplifiedRecipes#0;n#getAllSimplifiedRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="e#3043#3093#0" expanded="false" />
+            <element signature="n#!!block;n#translateName#0;n#translateName#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="e#3362#3419#0" expanded="false" />
+            <element signature="n#!!block;n#translateDescription#0;n#translateDescription#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#translateRecipe#0;n#translateRecipe#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
+            <element signature="n#!!block;n#translateRecipes#0;n#translateRecipes#0;n#!!block;n#BfCraft#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
