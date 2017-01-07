@@ -5,6 +5,7 @@ import {Observer} from 'rxjs/Observer';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/forkJoin';
+import 'js/bf-craft.js';
 
 // Javascript object loaded in index.html
 declare var BfCraft: any;
